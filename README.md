@@ -24,7 +24,20 @@ wb_trans: integer.          | Number of white-black transitions in the original 
 
 We started by doing a healthcheck to see if we had any missing values, NA or NULL. 
 
+We did five steps of modelling: 
 
+- The first one was with raw data, without pre-processing. We tried different models that we had seen in Machine Learning, such as: Logistic Regression, Support Vector Machine, K-Nearest Neighbours, Decision Tree, Random Forest, Bagging, ADA Boost. We decided to only keep the 3 models with the best accuracy: Decision Tree, Random Forest and ADA Boost.
+
+- The second step was with pre-processing. We explored the correlation of all features to the target and decided to remove the 3 least correlated features: lenght, mean_tr and wb_trans. We used the same 3 models that we kept previously. 
+
+- The third step was the same as second step but with scaling.
+
+- The fourth step was the same as the third step but while tuning the hyperparameters. 
+
+- In the fifth step we add K-Fold validation. 
+
+
+At the end, our best accuracy was with the model .... and we got ...% of accuracy. 
 
 ## III. Our Flask webapp :
 
