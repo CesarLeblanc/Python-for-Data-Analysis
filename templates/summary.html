@@ -1,0 +1,72 @@
+{% extends "material/base.html" %}
+{% block content %}
+<div class="showcase container purple lighten-3">
+    <div class="row">
+        <div class="col 12 m10 offset-ml center">
+            <center><h2>Page Blocks Classification</h2>
+            <p>Python for Data Analysis</p></center>
+            <a href="{{url_for('index')}}" class="btn btn-small purple white-text waves-effect waves-dark">Index</a>
+            <a href="{{url_for('preview')}}" class="btn btn-small white purple-text waves-effect waves-dark">Dataset</a>
+        </div>
+
+    </div>
+</div>
+
+<section class="section section-signup">
+<div class="container">
+          <div class="row">
+<div class="col s12 m4 offers">
+                     <div class="card-panel purple lighten-4 grey-text text-darken-4 z-depth-0">
+                         <p>The problem consists in classifying all the blocks of the page
+   layout of a document that has been detected by a segmentation
+                             process.</p>
+                         <p>This is an essential step in document analysis
+                             in order to separate text from graphic areas.</p>
+                         <p>Indeed, the five classes are: text (1), horizontal line (2),
+   picture (3), vertical line (4) and graphic (5).</p>
+                         <p>The 5473 examples comes from 54 distinct documents.</p>
+                         <p>Each observation concerns one block.</p>
+                         <p>All attributes are numeric.</p>
+                         <p>Data are in a format readable by C4.5.</p>
+                         <p>No missing value.</p>
+            </div>
+                     </div>
+
+<div class="col s12 m4 offers">
+                <div class="card-image waves-effect waves-block waves-light">
+<center><h5>ESILV</h5>
+                  <div class="collection" role="alert">
+                    <p  class="collection-item active purple">Ecole Supérieure d'Ingénieurs Léonard de Vinci </p></center>
+                </div>
+                        <img src="static/images/esilv.png" width="300px" height="300px">
+                </div>
+
+
+
+
+<div class="col s12 m4 offers">
+                     <div class="card-panel purple lighten-4 grey-text text-darken-4 z-depth-0">
+                         <p>height:   integer.         | Height of the block.</p>
+                         <p>area:     integer.    | Area of the block (height * lenght).</p>
+                         <p>eccen:    continuous.  | Eccentricity of the block (lenght / height).</p>
+                         <p>p_black:  continuous.  | Percentage of black pixels within the block (blackpix / area).</p>
+                         <p>p_and:    continuous.        | Percentage of black pixels after the application of the Run Length Smoothing Algorithm (RLSA) (blackand / area).</p>
+                         <p>blackpix: integer.    | Total number of black pixels in the original bitmap of the block.</p>
+                         <p>blackand: integer.        | Total number of black pixels in the bitmap of the block after the RLSA.</p>
+
+
+            </div>
+                     </div>
+</div>
+</div>
+</section>
+{% endblock %}
+
+
+{% block scripts %}
+{{ super() }}
+
+
+
+
+{% endblock %}
