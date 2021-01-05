@@ -22,7 +22,7 @@ wb_trans: integer.          | Number of white-black transitions in the original 
 
 ## II. Results :
 
-We started by doing a healthcheck to see if we had any missing values, NA or NULL. 
+We started by doing a healthcheck to see if we had any missing values, NA or NULL and we did some data visualizations. 
 
 We did five steps of modelling: 
 
