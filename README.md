@@ -37,7 +37,7 @@ We did five steps of modelling:
 - In the fifth step we add K-Fold validation. 
 
 
-At the end, our best accuracy was with the model .... and we got ...% of accuracy. 
+At the end, our best accuracy was with the model Random Forest and we got 98.4% of accuracy. 
 
 ## III. Our Flask webapp :
 
