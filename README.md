@@ -34,7 +34,7 @@ We did five steps of modelling:
 
 - The fourth step was the same as the third step but while tuning the hyperparameters. 
 
-- In the fifth step we add K-Fold validation. 
+- In the fifth step we added cross validation. 
 
 
 At the end, our best accuracy was with the model Random Forest and we got 98.4% of accuracy. 
